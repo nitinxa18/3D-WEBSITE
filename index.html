@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Cars</title>
+  <link rel="stylesheet" href="src/input.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">Car's</h1>
+    <nav class="nav">
+      <a data-aos="fade-down" data-aos-duration="1500" href="#">Home</a>
+      <a data-aos="fade-down" data-aos-duration="2000" href="#about">About</a>
+      <a data-aos="fade-down" data-aos-duration="2500" href="#">Services</a>
+      <a data-aos="fade-down" data-aos-duration="3000" href="#">Docs</a>
+    </nav>
+    <button data-aos="fade-down" data-aos-duration="3000" class="btn-sign">Sign In</button>
+  </header>
+
+  <!-- HERO SECTION (Page 1) -->
+  <main>
+    <section class="hero">
+      <div class="content">
+        <div data-aos="fade-zoom-in" data-aos-delay="300" data-aos-duration="1500" class="tag-box">
+          <div class="tag">PRESENTING &wedbar;</div>
+        </div>
+
+        <h1 data-aos="fade-zoom-in" data-aos-duration="2000">
+          Experience the <br> Future of Driving
+        </h1>
+
+        <p data-aos="fade-zoom-in" data-aos-duration="2500" class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Deserunt et accusantium magni repudiandae, sit animi.
+        </p>
+
+        <div data-aos="fade-zoom-in" data-aos-duration="3000" class="buttons">
+          <a href="#" class="btn-get-start">Documentation &gt;</a>
+          <a href="#" class="btn-get-main">Get Started &gt;</a>
+        </div>
+      </div>
+
+      <!-- 3D CAR -->
+      <spline-viewer 
+        data-aos="fade-zoom-in"
+        data-aos-delay="300"
+        data-aos-duration="3000"
+        class="robot"
+        url="https://prod.spline.design/QASvRLFTb-nV48cY/scene.splinecode">
+      </spline-viewer>
+    </section>
+
+    <!-- ABOUT US SECTION (Page 2) -->
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <h2 data-aos="fade-up" data-aos-duration="1500">About Us</h2>
+        <p data-aos="fade-up" data-aos-duration="2000">
+          At <strong>Car's</strong>, we believe the future of driving lies in innovation, sustainability,
+          and unmatched performance. Our mission is to design vehicles that not only inspire but also
+          contribute to a smarter and greener tomorrow.
+        </p>
+        <p data-aos="fade-up" data-aos-duration="2500">
+          With cutting-edge 3D experiences, futuristic designs, and advanced technologies,
+          we are redefining the way you see mobility. Join us in our journey towards the next generation of cars.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.56/build/spline-viewer.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
